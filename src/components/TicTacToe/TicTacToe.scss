@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .board {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+
+    button {
+      background-color: transparent;
+      border: 1px solid #000;
+      width: 100px;
+      height: 100px;
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}
