@@ -36,7 +36,7 @@ const TicTacToe = () => {
   }
 
   const onClickSquare = (index: number) => {
-    if (!items[index]) {
+    if (!items[index] && !winner && !isDraw) {
       setItems(prev => {
         const newItems = prev;
         newItems[index] = isX ? 'X' : 'O';
